@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock - Aoife McPadden</title>
   </head>
   <body>
@@ -16,33 +18,21 @@
         <option value="">Porto Alegre</option>
         <option value="">Dublin</option>
       </select>
-      <div class="city">
-        <div>
-          <h2>Porto 🇵🇹</h2>
-          <div class="date">June 4th 2024</div>
+      <div id="cities">
+        <div class="city" id="brazil">
+          <div>
+            <h2>Porto Alegre 🇧🇷</h2>
+            <div class="date">June 4th 2024</div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">18:52 <small>PM</small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Dublin 🇮🇪</h2>
-          <div class="date">June 4th 2024</div>
+        <div class="city" id="dublin">
+          <div>
+            <h2>Dublin 🇮🇪</h2>
+            <div class="date">June 4th 2024</div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">18:52 <small>PM</small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>New York 🇺🇸</h2>
-          <div class="date">June 4th 2024</div>
-        </div>
-        <div class="time">14:24 <small>PM</small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Rome 🇮🇹</h2>
-          <div class="date">June 4th 2024</div>
-        </div>
-        <div class="time">19:52 <small>PM</small></div>
       </div>
     </div>
     <footer>
