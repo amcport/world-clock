@@ -1,11 +1,12 @@
 body {
-  background-color: #f4f1fe;
+  background-color: #f3ebfe;
 }
 select {
   display: block;
   width: 90%;
   padding: 10px;
   border-radius: 4px;
+  margin: 0 auto;
 }
 h1 {
   font-family: sans-serif;
@@ -15,11 +16,13 @@ h1 {
 h2 {
   margin: 0 0 5px;
   font-size: 28px;
+  font-family: sans-serif;
 }
 footer {
   text-align: center;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 40px;
 }
 .city {
   display: flex;
@@ -28,12 +31,16 @@ footer {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   padding: 30px 0;
 }
+.cities {
+  padding: 50px 20px;
+}
 .city:last-child {
   border-bottom: none;
 }
 .date {
   opacity: 0.7;
   text-align: left;
+  font-size: 18px;
 }
 .time small {
   font-size: 28px;
@@ -42,12 +49,12 @@ footer {
   font-family: sans-serif;
 }
 .time {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
   font-family: sans-serif;
 }
 .container {
-  max-width: 80%;
+  max-width: 50%;
   text-align: center;
   background-color: white;
   padding: 30px;

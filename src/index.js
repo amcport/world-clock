@@ -19,6 +19,16 @@ function updateTime() {
   dublinTimeElement.innerHTML = dublinTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
+  //Moswow
+  let moscowElement = document.querySelector("#moscow");
+  let moscowDateElement = moscowElement.querySelector(".date");
+  let moscowTimeElement = moscowElement.querySelector(".time");
+  let moscowTime = moment().tz("Europe/Moscow");
+
+  moscowDateElement.innerHTML = moscowTime.format("MMMM Do YYYY");
+  moscowTimeElement.innerHTML = moscowTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 }
 
 function updateCity(event) {
@@ -36,7 +46,7 @@ function updateCity(event) {
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
           </div>
           <div class="time">${cityTime.format(
-            "h:mm:ss"
+            "h:mm:ss "
           )}<small>${cityTime.format("A")}</small></div>
         </div>
         <a href="/">All cities</a>
